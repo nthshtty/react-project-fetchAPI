@@ -17,7 +17,7 @@ Fetch and display API data (using fetch() or axios).
 2. data is state which is managaed by useState hook.
 3. fecthing data is aynchronous task so made use of aync/await for fetchData function and called inside the useEffect hook.
 4. fecth API used for fecthing the data and captured in fecthedData variable.
-5. Error handling done ussing try/catch blocks.
+5. Error handling done using try/catch blocks.
 6. Conditional rendering is used for rendering the data on UI
 
 fetch(url, method : , hearders: {conetent-type : application/json}, data: JSON.stringify({}))
