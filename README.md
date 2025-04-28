@@ -1,23 +1,50 @@
-# React + Vite
+# React Fetch and Axios - Simple GET Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to perform **GET API requests** in a React app using:
 
-Currently, two official plugins are available:
+- **Fetch API** (built-in browser feature)
+- **Axios** (popular third-party HTTP client)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Project Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Clone the repository.
+- Install dependencies.
+- Start the development server.
 
-Fetch and display API data (using fetch() or axios).
+---
 
-1. created App functional component.
-2. data is state which is managaed by useState hook.
-3. fecthing data is aynchronous task so made use of aync/await for fetchData function and called inside the useEffect hook.
-4. fecth API used for fecthing the data and captured in fecthedData variable.
-5. Error handling done using try/catch blocks.
-6. Conditional rendering is used for rendering the data on UI
+- **Fetch Example**:
 
-fetch(url, method : , hearders: {conetent-type : application/json}, data: JSON.stringify({}))
+  - Fetches user data from an API using the `fetch()` method.
+  - Manually handles response parsing and error checking.
+
+- **Axios Example**:
+  - Fetches user data from an API using `axios.get()`.
+  - Automatically handles JSON parsing and provides cleaner syntax.
+
+---
+
+## Concepts Covered
+
+- Using `useState` and `useEffect` hooks.
+- Performing GET requests in React.
+- Handling loading and error states.
+- Basic differences between Fetch and Axios.
+
+---
+
+## Why Axios?
+
+- Automatic JSON parsing.
+- Better and more consistent error handling.
+- Cleaner and more readable syntax compared to Fetch.
+
+---
+
+## Useful Links
+
+- [React Official Documentation](https://react.dev/)
+- [Fetch API Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [Axios Documentation](https://axios-http.com/)
